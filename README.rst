@@ -35,18 +35,21 @@ Add it to your `INSTALLED_APPS`:
         ...
     )
 
-Add django_honeycomb's URL patterns:
+Add the middleware to the end of your list of `MIDDLEWARE_CLASSES` in `settings.py`:
 
 .. code-block:: python
 
-    from django_honeycomb import urls as django_honeycomb_urls
+    MIDDLEWARE_CLASSES = (
+      # ...
+      'django_honeycomb.middleware.HoneyMiddleware',
+    )
 
+Add django_honeycomb's required env vars:
 
-    urlpatterns = [
-        ...
-        url(r'^', include(django_honeycomb_urls)),
-        ...
-    ]
+.. code-block:: none
+
+    HONEY_WRITE_KEY
+    HONEY_DATASET
 
 Features
 --------

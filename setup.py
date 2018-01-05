@@ -56,7 +56,9 @@ setup(
         'django_honeycomb',
     ],
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        'libhoney',
+    ],
     license="MIT",
     zip_safe=False,
     keywords='django-honeycomb',
