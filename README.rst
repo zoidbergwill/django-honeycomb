@@ -1,4 +1,8 @@
 =============================
+DEPRECATED: Please use [beeline-python](https://github.com/honeycombio/beeline-python)'s [Django middleware](https://github.com/honeycombio/beeline-python/blob/master/beeline/middleware/django/__init__.py) instead.
+=============================
+
+=============================
 django_honeycomb
 =============================
 
